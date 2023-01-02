@@ -96,7 +96,7 @@ public class UnifiedPlatformEnterCardDataTest {
     @Test
     void checkNotValidPaymenDataException() {
         int payTransactionsBefore = UP.getPaymentHistory().size();
-        credAuthServ = new CASDouble2(false, validCard, balance);
+        credAuthServ = new CASDouble(false, validCard, balance);
         UP.setCredAuthServ(credAuthServ);
         assertThrows(NotValidPaymentDataException.class, () -> UP.enterCardData(invalidCard));
         int payTransactionsAfter = UP.getPaymentHistory().size();
@@ -107,7 +107,7 @@ public class UnifiedPlatformEnterCardDataTest {
     void checkInsufficientBalanceException() {
         int payTransactionsBefore = UP.getPaymentHistory().size();
         balance = new BigDecimal(-100);
-        credAuthServ = new CASDouble2(false, validCard, balance);
+        credAuthServ = new CASDouble(false, validCard, balance);
         UP.setCredAuthServ(credAuthServ);
         assertThrows(InsufficientBalanceException.class, () -> UP.enterCardData(validCard));
         int payTransactionsAfter = UP.getPaymentHistory().size();
