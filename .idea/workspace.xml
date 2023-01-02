@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2205933-3f60-4609-901d-9fe19ebb80a2" name="Changes" comment="PDFDocument + Tests passed">
-      <change afterPath="$PROJECT_DIR$/src/publicadministration/CriminalRecordCertf.java" afterDir="false" />
-    </list>
+    <list default="true" id="e2205933-3f60-4609-901d-9fe19ebb80a2" name="Changes" comment="PDFDocument + Tests passed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Mihaela_publicadministration" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -115,9 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PDFDocumentTest" />
         <item itemvalue="JUnit.SmallCodeTest" />
+        <item itemvalue="JUnit.PDFDocumentTest" />
         <item itemvalue="JUnit.DigitalSignatureTest" />
+        <item itemvalue="JUnit.SmallCodeTest" />
+        <item itemvalue="JUnit.PDFDocumentTest" />
       </list>
     </recent_temporary>
   </component>
