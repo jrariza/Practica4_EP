@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2205933-3f60-4609-901d-9fe19ebb80a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/DigitalSignature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/data/DigitalSignatureTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practica4_EP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Practica4_EP.iml" afterDir="false" />
-    </list>
+    <list default="true" id="e2205933-3f60-4609-901d-9fe19ebb80a2" name="Changes" comment="DigitalSignature + Tests passed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +23,9 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JlgNmvtchFQyEAX23j93EjCDAd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -65,7 +63,7 @@
       <recent name="data" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SmallCodeTest">
     <configuration name="DigitalSignatureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica4_EP" />
       <extension name="coverage">
@@ -81,8 +79,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SmallCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica4_EP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data" />
+      <option name="MAIN_CLASS_NAME" value="data.SmallCodeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SmallCodeTest" />
         <item itemvalue="JUnit.DigitalSignatureTest" />
       </list>
     </recent_temporary>
@@ -96,6 +110,14 @@
       <option name="presentableId" value="Default" />
       <updated>1672658047647</updated>
     </task>
+    <task id="LOCAL-00001" summary="DigitalSignature + Tests passed">
+      <created>1672659283244</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672659283244</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,5 +145,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="DigitalSignature + Tests passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="DigitalSignature + Tests passed" />
   </component>
 </project>
