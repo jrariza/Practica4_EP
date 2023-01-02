@@ -103,6 +103,12 @@ public class UnifiedPlatform {
         procedureCost = new BigDecimal("3.86");
     }
 
+    public void selectAuthMethod(byte opc) throws ProceduralException {
+        // Comprobar que estamos en Min.Justicia, tramite en curso
+        if (!(currentAAPP == AAPP.JUST_MIN && procedureIsActive)) throw new ProceduralException();
+        authMethod = opc;
+    }
+
     public void enterNIFandPINobt(Nif nif, Date valDate) throws NifNotRegisteredException, IncorrectValDateException, AnyMobileRegisteredException, ConnectException, ProceduralException {
         // Comprobar tramite en curso y cl@ve pin
         if (!(procedureIsActive && authMethod == CLAVE_PIN)) throw new ProceduralException();
