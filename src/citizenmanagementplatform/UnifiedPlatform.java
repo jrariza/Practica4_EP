@@ -109,5 +109,10 @@ public class UnifiedPlatform {
         PINSent = CertAuth.sendPIN(nif, valDate);
         citizen = new Citizen(nif, null, null, null);
     }
+
+    public void enterPIN(SmallCode pin) throws NotValidPINException, ConnectException, ProceduralException {
+        if (!(procedureIsActive && authMethod == CLAVE_PIN && PINSent)) throw new ProceduralException();
+        authenticated = CertAuth.checkPIN(citizen.getNif(), pin);
+    }
 }
 
