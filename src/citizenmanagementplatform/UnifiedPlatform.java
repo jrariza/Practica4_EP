@@ -85,4 +85,11 @@ public class UnifiedPlatform {
         if (currentAAPP != null) throw new ProceduralException();
         currentAAPP = AAPP.JUST_MIN;
     }
+
+    public void selectProcedures() throws ProceduralException {
+        // Comprobar que estamos en Min. Justicia
+        if (currentAAPP != AAPP.JUST_MIN) throw new ProceduralException();
+        proceduresEnabled = true;
+    }
 }
+

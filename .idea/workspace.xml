@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2205933-3f60-4609-901d-9fe19ebb80a2" name="Changes" comment="JusticeMinistry + JusticeMinistryDouble">
-      <change afterPath="$PROJECT_DIR$/src/exceptions/InsufficientBalanceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/NotValidPaymentDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/CAS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/CASDouble.java" afterDir="false" />
+    <list default="true" id="e2205933-3f60-4609-901d-9fe19ebb80a2" name="Changes" comment="PDFDocument + Tests passed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Mihaela_publicadministration" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,14 +45,13 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/services" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/certf_database" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="exceptions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mabmi\Desktop\GEI\3r\Enginyeria del Programari\Practica4_EP\src\services" />
       <recent name="C:\Users\mabmi\Desktop\GEI\3r\Enginyeria del Programari\Practica4_EP\certf_database" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -69,7 +64,6 @@
       <recent name="data" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="services" />
       <recent name="data" />
     </key>
   </component>
@@ -159,21 +153,7 @@
       <option name="project" value="LOCAL" />
       <updated>1672662092002</updated>
     </task>
-    <task id="LOCAL-00004" summary="publicadministration package + complete">
-      <created>1672662810493</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1672662810493</updated>
-    </task>
-    <task id="LOCAL-00005" summary="JusticeMinistry + JusticeMinistryDouble">
-      <created>1672663827755</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1672663827755</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,7 +167,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Mihaela_services" />
+                        <option value="Mihaela_publicadministration" />
                       </list>
                     </value>
                   </entry>
@@ -205,12 +185,12 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="Mihaela_services" />
+                  <option value="Mihaela_publicadministration" />
                 </option>
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="Mihaela_publicadministration" />
+                  <option value="Mihaela_services" />
                 </option>
               </RecentGroup>
               <RecentGroup>
@@ -233,15 +213,12 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="DigitalSignature + Tests passed" />
     <MESSAGE value="data package + complete" />
     <MESSAGE value="PDFDocument + Tests passed" />
-    <MESSAGE value="publicadministration package + complete" />
-    <MESSAGE value="JusticeMinistry + JusticeMinistryDouble" />
-    <option name="LAST_COMMIT_MESSAGE" value="JusticeMinistry + JusticeMinistryDouble" />
+    <option name="LAST_COMMIT_MESSAGE" value="PDFDocument + Tests passed" />
   </component>
 </project>
