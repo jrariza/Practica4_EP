@@ -69,7 +69,6 @@ public class UnifiedPlatformEnterCardDataTest {
         // Inject dependences
         UP.setCertAuth(certAuth);
         UP.setGralPoliceDept(gralPolDept);
-//        UP.setCredAuthServ();
         prepareUseCase();
     }
 
