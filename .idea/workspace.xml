@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2205933-3f60-4609-901d-9fe19ebb80a2" name="Changes" comment="PDFDocument + Tests passed" />
+    <list default="true" id="e2205933-3f60-4609-901d-9fe19ebb80a2" name="Changes" comment="data services + complete" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Mihaela_publicadministration" />
+        <entry key="$PROJECT_DIR$" value="Mihaela_services" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,13 +43,14 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/certf_database" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/services" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="exceptions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mabmi\Desktop\GEI\3r\Enginyeria del Programari\Practica4_EP\src\services" />
       <recent name="C:\Users\mabmi\Desktop\GEI\3r\Enginyeria del Programari\Practica4_EP\certf_database" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -62,6 +63,7 @@
       <recent name="data" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="services" />
       <recent name="data" />
     </key>
   </component>
@@ -151,7 +153,35 @@
       <option name="project" value="LOCAL" />
       <updated>1672662092002</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="publicadministration package + complete">
+      <created>1672662810493</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672662810493</updated>
+    </task>
+    <task id="LOCAL-00005" summary="JusticeMinistry + JusticeMinistryDouble">
+      <created>1672663827755</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672663827755</updated>
+    </task>
+    <task id="LOCAL-00006" summary="CAS + CASDouble">
+      <created>1672664138836</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672664138836</updated>
+    </task>
+    <task id="LOCAL-00007" summary="data services + complete">
+      <created>1672664377370</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672664377370</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,7 +195,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Mihaela_publicadministration" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -183,7 +213,7 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="Mihaela_publicadministration" />
+                  <option value="master" />
                 </option>
               </RecentGroup>
               <RecentGroup>
@@ -193,7 +223,7 @@
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="master" />
+                  <option value="Mihaela_publicadministration" />
                 </option>
               </RecentGroup>
               <RecentGroup>
@@ -218,6 +248,10 @@
     <MESSAGE value="DigitalSignature + Tests passed" />
     <MESSAGE value="data package + complete" />
     <MESSAGE value="PDFDocument + Tests passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="PDFDocument + Tests passed" />
+    <MESSAGE value="publicadministration package + complete" />
+    <MESSAGE value="JusticeMinistry + JusticeMinistryDouble" />
+    <MESSAGE value="CAS + CASDouble" />
+    <MESSAGE value="data services + complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="data services + complete" />
   </component>
 </project>
