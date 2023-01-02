@@ -1,6 +1,7 @@
 package citizenmanagementplatform;
 
 import data.Goal;
+import exceptions.ProceduralException;
 import publicadministration.CardPayment;
 import publicadministration.Citizen;
 import publicadministration.CriminalRecordCertf;
@@ -76,5 +77,12 @@ public class UnifiedPlatform {
         paymentHistory = new HashMap<>();
         paymentIsReady = false;
         paymentCompleted = false;
+    }
+
+    // Input events
+    public void selectJusMin() throws ProceduralException {
+        // Si ya se ha elegido una AAPP no se puede elegir otra hasta que no se salga de la actual
+        if (currentAAPP != null) throw new ProceduralException();
+        currentAAPP = AAPP.JUST_MIN;
     }
 }
