@@ -143,7 +143,6 @@ public class UnifiedPlatform {
         paymentIsReady = true;
     }
 
-
     public void enterCardData(CreditCard cardD) throws IncompleteFormException, NotValidPaymentDataException, InsufficientBalanceException, ConnectException, ProceduralException, NullParameterException, NotValidPaymentImportException {
         // Comprobar tramite en curso, autent correcta, datos verificados, listo para pagar, variable de clase no vacias
         if (!(procedureIsActive && authenticated && dataIsVerified && paymentIsReady && citizen != null && procedureCost != null))
@@ -157,6 +156,13 @@ public class UnifiedPlatform {
         //Añadir al historico de pagos
         paymentHistory.put(nTrans, cPay);
         numTrans++;
+    }
+
+    public void obtainCertificate() throws BadPathException, ConnectException, DigitalSignatureException, IOException, ProceduralException {
+        // Comprobar tramite en curso, autent correcta, datos verificados, ya pagado
+        if (!(procedureIsActive && authenticated && dataIsVerified && paymentCompleted))
+            throw new ProceduralException();
+        crimCertf = JustMin.getCriminalRecordCertf(citizen, goal);
     }
 
 
