@@ -198,6 +198,23 @@ public class UnifiedPlatform {
         JustMin = justMin;
     }
 
+    // Getters para comprobar que se cumplen las postcondiciones
+    public Citizen getCitizen() {
+        return citizen;
+    }
+
+    public CardPayment getCardPayment() {
+        return cPay;
+    }
+
+    public CriminalRecordCertf getCrimCertf() {
+        return crimCertf;
+    }
+
+    public HashMap<String, CardPayment> getPaymentHistory() {
+        return paymentHistory;
+    }
+
 
 
 }
