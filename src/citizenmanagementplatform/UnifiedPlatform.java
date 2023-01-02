@@ -181,6 +181,23 @@ public class UnifiedPlatform {
     private void printDocument(DocPath path) throws BadPathException, PrintingException {
     }
 
+    // The setter methods for injecting the dependences
+    public void setCredAuthServ(CAS credAuthServ) {
+        CredAuthServ = credAuthServ;
+    }
+
+    public void setCertAuth(CertificationAuthority certAuth) {
+        CertAuth = certAuth;
+    }
+
+    public void setGralPoliceDept(GPD gralPoliceDept) {
+        GralPoliceDept = gralPoliceDept;
+    }
+
+    public void setJustMin(JusticeMinistry justMin) {
+        JustMin = justMin;
+    }
+
 
 
 }
