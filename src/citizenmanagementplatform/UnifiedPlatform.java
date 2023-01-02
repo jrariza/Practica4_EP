@@ -91,5 +91,12 @@ public class UnifiedPlatform {
         if (currentAAPP != AAPP.JUST_MIN) throw new ProceduralException();
         proceduresEnabled = true;
     }
+
+    public void selectCriminalReportCertf() throws ProceduralException {
+        // Comprobar que estamos en Min. Justicia y se ha seleccionado tramites
+        if (!(currentAAPP == AAPP.JUST_MIN && proceduresEnabled)) throw new ProceduralException();
+        procedureIsActive = true;
+        procedureCost = new BigDecimal("3.86");
+    }
 }
 
