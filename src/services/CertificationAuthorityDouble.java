@@ -29,12 +29,11 @@ public class CertificationAuthorityDouble implements CertificationAuthority {
         validDate = c.getTime();
     }
 
-
     private void checkOperationStatus(Nif nif, Date date) throws NifNotRegisteredException, IncorrectValDateException, AnyMobileRegisteredException, ConnectException {
         if (connectExc) throw new ConnectException();
         if (isNotRegistered(nif)) throw new NifNotRegisteredException();
         if (isNifExpired(date)) throw new IncorrectValDateException();
-        if (Objects.equals(nif, nifWithoutMobile)) throw new AnyMobileRegisteredException();
+        if (hasNoMobile(nif)) throw new AnyMobileRegisteredException();
     }
 
     private boolean isNotRegistered(Nif nif) {
@@ -43,6 +42,10 @@ public class CertificationAuthorityDouble implements CertificationAuthority {
 
     private boolean isNifExpired(Date date) {
         return !validDate.equals(date);
+    }
+
+    private boolean hasNoMobile(Nif nif) {
+        return Objects.equals(nifWithoutMobile, nif);
     }
 
     @Override
