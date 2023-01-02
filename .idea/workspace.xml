@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2205933-3f60-4609-901d-9fe19ebb80a2" name="Changes" comment="PDFDocument + Tests passed">
+    <list default="true" id="e2205933-3f60-4609-901d-9fe19ebb80a2" name="Changes" comment="UnifiedPlataform selectAuthMethod() + NotMatchingNifsException + IncompleteFormException">
+      <change afterPath="$PROJECT_DIR$/tests/citizenmanagementplatform/UnifiedPlatformEnterCardDataTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Mihaela_publicadministration" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,18 +41,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/certf_database" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "/home/arnau/Desktop/multiple/conway/java/conway/Practica4_EP/tests/citizenmanagementplatform"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="exceptions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/citizenmanagementplatform" />
       <recent name="C:\Users\mabmi\Desktop\GEI\3r\Enginyeria del Programari\Practica4_EP\certf_database" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -64,6 +64,7 @@
       <recent name="data" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="exceptions" />
       <recent name="data" />
     </key>
   </component>
@@ -153,7 +154,28 @@
       <option name="project" value="LOCAL" />
       <updated>1672662092002</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="UnifiedPlataform selectProcedures()">
+      <created>1672665263015</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672665263015</updated>
+    </task>
+    <task id="LOCAL-00005" summary="UnifiedPlataform selectAuthMethod()">
+      <created>1672665694674</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672665694674</updated>
+    </task>
+    <task id="LOCAL-00006" summary="UnifiedPlataform selectAuthMethod() + NotMatchingNifsException + IncompleteFormException">
+      <created>1672665814081</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672665814081</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +241,9 @@
     <MESSAGE value="DigitalSignature + Tests passed" />
     <MESSAGE value="data package + complete" />
     <MESSAGE value="PDFDocument + Tests passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="PDFDocument + Tests passed" />
+    <MESSAGE value="UnifiedPlataform selectProcedures()" />
+    <MESSAGE value="UnifiedPlataform selectAuthMethod()" />
+    <MESSAGE value="UnifiedPlataform selectAuthMethod() + NotMatchingNifsException + IncompleteFormException" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnifiedPlataform selectAuthMethod() + NotMatchingNifsException + IncompleteFormException" />
   </component>
 </project>
