@@ -214,8 +214,5 @@ public class UnifiedPlatform {
     public HashMap<String, CardPayment> getPaymentHistory() {
         return paymentHistory;
     }
-
-
-
 }
 

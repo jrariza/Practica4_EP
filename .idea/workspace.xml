@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2205933-3f60-4609-901d-9fe19ebb80a2" name="Changes" comment="UnifiedPlataform selectAuthMethod() + NotMatchingNifsException + IncompleteFormException">
-      <change afterPath="$PROJECT_DIR$/tests/citizenmanagementplatform/UnifiedPlatformEnterCardDataTest.java" afterDir="false" />
+    <list default="true" id="8a045b75-a574-40a3-b865-378dc229ca2f" name="Changes" comment="UnifiedPlatformObtainCertificateTest + Tests passed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/citizenmanagementplatform/UnifiedPlatform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/citizenmanagementplatform/UnifiedPlatform.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Mihaela_UP_Tests" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,17 +41,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "/home/arnau/Desktop/multiple/conway/java/conway/Practica4_EP/tests/citizenmanagementplatform"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/citizenmanagementplatform" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="exceptions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tests/citizenmanagementplatform" />
+      <recent name="C:\Users\mabmi\Desktop\GEI\3r\Enginyeria del Programari\Practica4_EP\tests\citizenmanagementplatform" />
+      <recent name="C:\Users\mabmi\Desktop\GEI\3r\Enginyeria del Programari\Practica4_EP\src\services" />
       <recent name="C:\Users\mabmi\Desktop\GEI\3r\Enginyeria del Programari\Practica4_EP\certf_database" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -60,15 +63,28 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mabmi\Desktop\GEI\3r\Enginyeria del Programari\Practica4_EP\tests\data" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="citizenmanagementplatform" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="data" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="exceptions" />
+      <recent name="citizenmanagementplatform" />
+      <recent name="services" />
       <recent name="data" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PDFDocumentTest">
+  <component name="RunManager" selected="JUnit.All in Practica4_EP">
+    <configuration name="All in Practica4_EP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica4_EP" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DigitalSignatureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica4_EP" />
       <extension name="coverage">
@@ -116,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Practica4_EP" />
         <item itemvalue="JUnit.SmallCodeTest" />
         <item itemvalue="JUnit.PDFDocumentTest" />
         <item itemvalue="JUnit.DigitalSignatureTest" />
         <item itemvalue="JUnit.SmallCodeTest" />
-        <item itemvalue="JUnit.PDFDocumentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -154,28 +170,70 @@
       <option name="project" value="LOCAL" />
       <updated>1672662092002</updated>
     </task>
-    <task id="LOCAL-00004" summary="UnifiedPlataform selectProcedures()">
-      <created>1672665263015</created>
+    <task id="LOCAL-00004" summary="publicadministration package + complete">
+      <created>1672662810493</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1672665263015</updated>
+      <updated>1672662810493</updated>
     </task>
-    <task id="LOCAL-00005" summary="UnifiedPlataform selectAuthMethod()">
-      <created>1672665694674</created>
+    <task id="LOCAL-00005" summary="JusticeMinistry + JusticeMinistryDouble">
+      <created>1672663827755</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1672665694674</updated>
+      <updated>1672663827755</updated>
     </task>
-    <task id="LOCAL-00006" summary="UnifiedPlataform selectAuthMethod() + NotMatchingNifsException + IncompleteFormException">
-      <created>1672665814081</created>
+    <task id="LOCAL-00006" summary="UnifiedPlatform selectCriminalReportCertf()">
+      <created>1672665317605</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1672665814081</updated>
+      <updated>1672665317605</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UnifiedPlatform realizePayment()">
+      <created>1672665886522</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672665886523</updated>
+    </task>
+    <task id="LOCAL-00008" summary="UnifiedPlatform enterCardData()">
+      <created>1672665907040</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672665907040</updated>
+    </task>
+    <task id="LOCAL-00009" summary="UnifiedPlatform obtainCertificate()">
+      <created>1672665932665</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672665932665</updated>
+    </task>
+    <task id="LOCAL-00010" summary="UnifiedPlatformConnectionTest + Tests passed">
+      <created>1672666683693</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672666683693</updated>
+    </task>
+    <task id="LOCAL-00011" summary="UnifiedPlatformProceduralExceptionTest + Tests passed">
+      <created>1672666712041</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672666712041</updated>
+    </task>
+    <task id="LOCAL-00012" summary="UnifiedPlatformObtainCertificateTest + Tests passed">
+      <created>1672666739335</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672666739335</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +247,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Mihaela_publicadministration" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -207,7 +265,12 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="Mihaela_publicadministration" />
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
                 </option>
               </RecentGroup>
               <RecentGroup>
@@ -217,7 +280,7 @@
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="master" />
+                  <option value="Mihaela_publicadministration" />
                 </option>
               </RecentGroup>
               <RecentGroup>
@@ -225,25 +288,27 @@
                   <option value="Mihaela_data" />
                 </option>
               </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="HEAD" />
-                </option>
-              </RecentGroup>
             </list>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="DigitalSignature + Tests passed" />
     <MESSAGE value="data package + complete" />
     <MESSAGE value="PDFDocument + Tests passed" />
-    <MESSAGE value="UnifiedPlataform selectProcedures()" />
-    <MESSAGE value="UnifiedPlataform selectAuthMethod()" />
-    <MESSAGE value="UnifiedPlataform selectAuthMethod() + NotMatchingNifsException + IncompleteFormException" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnifiedPlataform selectAuthMethod() + NotMatchingNifsException + IncompleteFormException" />
+    <MESSAGE value="publicadministration package + complete" />
+    <MESSAGE value="JusticeMinistry + JusticeMinistryDouble" />
+    <MESSAGE value="UnifiedPlatform selectCriminalReportCertf()" />
+    <MESSAGE value="UnifiedPlatform realizePayment()" />
+    <MESSAGE value="UnifiedPlatform enterCardData()" />
+    <MESSAGE value="UnifiedPlatform obtainCertificate()" />
+    <MESSAGE value="UnifiedPlatformConnectionTest + Tests passed" />
+    <MESSAGE value="UnifiedPlatformProceduralExceptionTest + Tests passed" />
+    <MESSAGE value="UnifiedPlatformObtainCertificateTest + Tests passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnifiedPlatformObtainCertificateTest + Tests passed" />
   </component>
 </project>
