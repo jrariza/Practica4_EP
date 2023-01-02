@@ -159,7 +159,7 @@ public class UnifiedPlatform {
         numTrans++;
     }
 
-    public void obtainCertificate() throws BadPathException, ConnectException, DigitalSignatureException, IOException, ProceduralException {
+    public void obtainCertificate() throws BadPathException, ConnectException, DigitalSignatureException, IOException, ProceduralException, NullParameterException {
         // Comprobar tramite en curso, autent correcta, datos verificados, ya pagado
         if (!(procedureIsActive && authenticated && dataIsVerified && paymentCompleted))
             throw new ProceduralException();

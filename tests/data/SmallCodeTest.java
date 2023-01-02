@@ -1,6 +1,6 @@
 package data;
 
-import exceptions.InvalidFormatException;
+import exceptions.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.Random;
@@ -11,9 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class SmallCodeTest {
 
     @Test
-    @SuppressWarnings("ConstantConditions")
     void CheckNullException() {
-        assertThrows(NullPointerException.class, () -> new SmallCode(null));
+        assertThrows(NullParameterException.class, () -> new SmallCode(null));
     }
 
     @Test
@@ -22,7 +21,7 @@ class SmallCodeTest {
     }
 
     @Test
-    void CheckCodeLengthBiggerThan3() {
+    void CheckCodeLengthLargerThan3() {
         assertThrows(InvalidFormatException.class, () -> new SmallCode("0123"));
     }
 

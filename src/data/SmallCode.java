@@ -1,14 +1,15 @@
 package data;
 
 import exceptions.InvalidFormatException;
+import exceptions.NullParameterException;
 
 import java.util.Objects;
 
 final public class SmallCode {
     private final String smallCode;
 
-    public SmallCode(String code) throws InvalidFormatException {
-        if (Objects.equals(code, null)) throw new NullPointerException("Small Code is null");
+    public SmallCode(String code) throws InvalidFormatException, NullParameterException {
+        if (Objects.equals(code, null)) throw new NullParameterException();
         if (!isValid(code)) throw new InvalidFormatException("Small Code format is wrong");
         smallCode = code;
     }

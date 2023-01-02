@@ -1,5 +1,7 @@
 package data;
 
+import exceptions.NullParameterException;
+
 import java.util.Objects;
 
 final public class DocPath {

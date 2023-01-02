@@ -1,13 +1,15 @@
 package data;
 
+import exceptions.NullParameterException;
+
 import java.util.Arrays;
 import java.util.Objects;
 
 final public class DigitalSignature {
     private final byte[] digitalSignature;
 
-    public DigitalSignature(byte[] digSign) {
-        if (Objects.equals(digSign, null)) throw new NullPointerException("Digital Signature is null");
+    public DigitalSignature(byte[] digSign) throws NullParameterException {
+        if (Objects.equals(digSign, null)) throw new NullParameterException();
         digitalSignature = digSign;
     }
 

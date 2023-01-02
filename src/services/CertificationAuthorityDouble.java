@@ -17,7 +17,7 @@ public class CertificationAuthorityDouble implements CertificationAuthority {
     private final Date validDate;
 
 
-    public CertificationAuthorityDouble(boolean connectExc) throws NullParameterException, NotValidNifCodeException, InvalidFormatException {
+    public CertificationAuthorityDouble(boolean connectExc) throws NotValidNifCodeException, InvalidFormatException, NullParameterException {
         this.connectExc = connectExc;
         this.validNif = new Nif("11111111A");
         this.nifWithoutMobile = new Nif("22222222B");
