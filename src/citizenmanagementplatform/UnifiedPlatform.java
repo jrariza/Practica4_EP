@@ -1,5 +1,6 @@
 package citizenmanagementplatform;
 
+import data.DocPath;
 import data.Goal;
 import data.Nif;
 import data.SmallCode;
@@ -164,6 +165,22 @@ public class UnifiedPlatform {
             throw new ProceduralException();
         crimCertf = JustMin.getCriminalRecordCertf(citizen, goal);
     }
+
+    public void printDocument() throws BadPathException, PrintingException {
+    }
+
+
+    // Other internal operations (not required)
+    private void registerPayment() {
+    }
+
+    private void openDocument() throws BadPathException, IOException {
+        crimCertf.openDoc();
+    }
+
+    private void printDocument(DocPath path) throws BadPathException, PrintingException {
+    }
+
 
 
 }
