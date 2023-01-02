@@ -16,6 +16,7 @@ import java.math.BigDecimal;
 import java.net.ConnectException;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Objects;
 
 public class UnifiedPlatform {
     public static final byte NO_AUTH = 0;
@@ -119,6 +120,19 @@ public class UnifiedPlatform {
     public void enterPIN(SmallCode pin) throws NotValidPINException, ConnectException, ProceduralException {
         if (!(procedureIsActive && authMethod == CLAVE_PIN && PINSent)) throw new ProceduralException();
         authenticated = CertAuth.checkPIN(citizen.getNif(), pin);
+    }
+
+    public void enterForm(Citizen citz, Goal goal) throws IncompleteFormException, IncorrectVerificationException, ConnectException, ProceduralException, NotMatchingNifsException {
+        // Comprobar tramite en curso, correcta autenticacion, nif corresponde
+        if (!(procedureIsActive && authenticated)) throw new ProceduralException();
+        // Comprobar formulario no vacio
+        if (citz == null || goal == null) throw new IncompleteFormException();
+        // Comprobar nifs iguales
+        if (!Objects.equals(citizen.getNif(), citz.getNif())) throw new NotMatchingNifsException();
+
+        dataIsVerified = GralPoliceDept.verifyData(citz, goal);
+        citizen = citz;
+        this.goal = goal;
     }
 }
 
