@@ -142,5 +142,23 @@ public class UnifiedPlatform {
         if (!(procedureIsActive && authenticated && dataIsVerified)) throw new ProceduralException();
         paymentIsReady = true;
     }
+
+
+    public void enterCardData(CreditCard cardD) throws IncompleteFormException, NotValidPaymentDataException, InsufficientBalanceException, ConnectException, ProceduralException, NullParameterException, NotValidPaymentImportException {
+        // Comprobar tramite en curso, autent correcta, datos verificados, listo para pagar, variable de clase no vacias
+        if (!(procedureIsActive && authenticated && dataIsVerified && paymentIsReady && citizen != null && procedureCost != null))
+            throw new ProceduralException();
+        // Comprobar formulario no vacio
+        if (cardD == null) throw new IncompleteFormException();
+
+        cPay = new CardPayment(citizen.getNif(), procedureCost);
+        String nTrans = Integer.toString(numTrans);
+        paymentCompleted = CredAuthServ.askForApproval(nTrans, cardD, new Date(), procedureCost);
+        //Añadir al historico de pagos
+        paymentHistory.put(nTrans, cPay);
+        numTrans++;
+    }
+
+
 }
 
