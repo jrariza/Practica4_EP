@@ -1,7 +1,9 @@
 package citizenmanagementplatform;
 
 import data.Goal;
-import exceptions.ProceduralException;
+import data.Nif;
+import data.SmallCode;
+import exceptions.*;
 import publicadministration.CardPayment;
 import publicadministration.Citizen;
 import publicadministration.CriminalRecordCertf;
@@ -11,6 +13,8 @@ import services.GPD;
 import services.JusticeMinistry;
 
 import java.math.BigDecimal;
+import java.net.ConnectException;
+import java.util.Date;
 import java.util.HashMap;
 
 public class UnifiedPlatform {
@@ -97,6 +101,13 @@ public class UnifiedPlatform {
         if (!(currentAAPP == AAPP.JUST_MIN && proceduresEnabled)) throw new ProceduralException();
         procedureIsActive = true;
         procedureCost = new BigDecimal("3.86");
+    }
+
+    public void enterNIFandPINobt(Nif nif, Date valDate) throws NifNotRegisteredException, IncorrectValDateException, AnyMobileRegisteredException, ConnectException, ProceduralException {
+        // Comprobar tramite en curso y cl@ve pin
+        if (!(procedureIsActive && authMethod == CLAVE_PIN)) throw new ProceduralException();
+        PINSent = CertAuth.sendPIN(nif, valDate);
+        citizen = new Citizen(nif, null, null, null);
     }
 }
 
