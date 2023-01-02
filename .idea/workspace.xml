@@ -39,7 +39,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CrimConvictionsCollTest">
     <configuration name="CrimConvictionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica4_EP" />
       <extension name="coverage">
@@ -55,8 +55,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CrimConvictionsCollTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica4_EP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="publicadministration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="publicadministration" />
+      <option name="MAIN_CLASS_NAME" value="publicadministration.CrimConvictionsCollTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CrimConvictionsCollTest" />
         <item itemvalue="JUnit.CrimConvictionTest" />
       </list>
     </recent_temporary>
