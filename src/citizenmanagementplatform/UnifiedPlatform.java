@@ -6,12 +6,14 @@ import data.SmallCode;
 import exceptions.*;
 import publicadministration.CardPayment;
 import publicadministration.Citizen;
+import publicadministration.CreditCard;
 import publicadministration.CriminalRecordCertf;
 import services.CAS;
 import services.CertificationAuthority;
 import services.GPD;
 import services.JusticeMinistry;
 
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.net.ConnectException;
 import java.util.Date;
@@ -133,6 +135,12 @@ public class UnifiedPlatform {
         dataIsVerified = GralPoliceDept.verifyData(citz, goal);
         citizen = citz;
         this.goal = goal;
+    }
+
+    public void realizePayment() throws ProceduralException {
+        // Comprobar tramite en curso, autenticacion correcta, datos verificados
+        if (!(procedureIsActive && authenticated && dataIsVerified)) throw new ProceduralException();
+        paymentIsReady = true;
     }
 }
 
