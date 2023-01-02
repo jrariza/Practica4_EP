@@ -29,14 +29,6 @@ public class CertificationAuthorityDouble implements CertificationAuthority {
         validDate = c.getTime();
     }
 
-
-    private void checkOperationStatus(Nif nif, Date date) throws NifNotRegisteredException, IncorrectValDateException, AnyMobileRegisteredException, ConnectException {
-        if (connectExc) throw new ConnectException();
-        if (isNotRegistered(nif)) throw new NifNotRegisteredException();
-        if (isNifExpired(date)) throw new IncorrectValDateException();
-        if (Objects.equals(nif, nifWithoutMobile)) throw new AnyMobileRegisteredException();
-    }
-
     private boolean isNotRegistered(Nif nif) {
         return !validNif.equals(nif) && !nifWithoutMobile.equals(nif);
     }
@@ -45,16 +37,27 @@ public class CertificationAuthorityDouble implements CertificationAuthority {
         return !validDate.equals(date);
     }
 
+    private boolean hasNoMobile(Nif nif) {
+        return Objects.equals(nifWithoutMobile, nif);
+    }
+
+    private boolean isInvalidPin(SmallCode pin){
+        return !validPIN.equals(pin);
+    }
+
     @Override
     public boolean sendPIN(Nif nif, Date date) throws NifNotRegisteredException, IncorrectValDateException, AnyMobileRegisteredException, ConnectException {
-        checkOperationStatus(nif, date);
+        if (connectExc) throw new ConnectException();
+        if (isNotRegistered(nif)) throw new NifNotRegisteredException();
+        if (isNifExpired(date)) throw new IncorrectValDateException();
+        if (hasNoMobile(nif)) throw new AnyMobileRegisteredException();
         return true;
     }
 
     @Override
     public boolean checkPIN(Nif nif, SmallCode pin) throws NotValidPINException, ConnectException {
         if (connectExc) throw new ConnectException();
-        if (!validPIN.equals(pin)) throw new NotValidPINException();
+        if (isInvalidPin(pin)) throw new NotValidPINException();
         return true;
     }
 
