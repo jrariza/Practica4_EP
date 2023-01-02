@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2205933-3f60-4609-901d-9fe19ebb80a2" name="Changes" comment="data package + complete">
-      <change afterPath="$PROJECT_DIR$/src/exceptions/BadPathException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/publicadministration/PDFDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/publicadministration/PDFDocumentTest.java" afterDir="false" />
+    <list default="true" id="e2205933-3f60-4609-901d-9fe19ebb80a2" name="Changes" comment="PDFDocument + Tests passed">
+      <change afterPath="$PROJECT_DIR$/src/publicadministration/CriminalRecordCertf.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +45,14 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/certf_database" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="exceptions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mabmi\Desktop\GEI\3r\Enginyeria del Programari\Practica4_EP\certf_database" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -142,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672661123344</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="PDFDocument + Tests passed">
+      <created>1672662092002</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672662092002</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,7 +165,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Mihaela_services" />
+                        <option value="Mihaela_publicadministration" />
                       </list>
                     </value>
                   </entry>
@@ -172,6 +181,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Mihaela_publicadministration" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="Mihaela_services" />
@@ -203,6 +217,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="DigitalSignature + Tests passed" />
     <MESSAGE value="data package + complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="data package + complete" />
+    <MESSAGE value="PDFDocument + Tests passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="PDFDocument + Tests passed" />
   </component>
 </project>
